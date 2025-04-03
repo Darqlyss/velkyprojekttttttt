@@ -4,6 +4,7 @@
 
 <div class="container mt-5">
     <h2 class="text-center">Seznam typů komponent</h2>
+    <a href="<?= base_url('index.php/taby')?>" class="btn btn-primary btn-lg">Taby</a>
     <div class="row">
         <?php foreach ($komponenty as $komponent): ?>
             <div class="col-md-4">
