@@ -18,6 +18,9 @@
                 </div>
             </div>
         <?php endforeach; ?>
+        <div class="text-center mt-4">
+            <a href="<?= base_url("index.php/kategorie/pridat") ?>">Přidat novou kategorii</a>
+        </div>
     </div>
 </div>
 

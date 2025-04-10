@@ -9,7 +9,7 @@
                     <div class="card-body d-flex flex-column">
                         <?= anchor('komponenty/detail/' . $komponent->id, 
                             '<h5 class="card-title">' . esc($komponent->nazev) . '</h5>',
-                            ['class' => 'stretched-link text-decoration-none']
+                            ['class' => 'stretched-link text-decoration-none ']
                         ) ?>
                     </div>
                 </div>

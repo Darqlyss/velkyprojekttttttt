@@ -9,5 +9,7 @@ $routes->get('/', 'Main::stranka');
 $routes->get('komponenty/(:segment)', 'Main::detail/$1');
 $routes->get('komponenty/detail/(:num)', 'Main::detailKomponent/$1');
 $routes->get('taby', 'Main::taby');
+$routes->get('kategorie/pridat', 'Main::pridat');
+$routes->post('kategorie/pridat', 'Main::ulozit');
 
 

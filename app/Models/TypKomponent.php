@@ -12,7 +12,7 @@ class TypKomponent extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['typKomponent', 'url'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

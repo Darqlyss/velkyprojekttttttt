@@ -102,5 +102,21 @@ class Main extends BaseController
         return view('taby', ['typy' => $typy]);
     }
     
-    
+    public function pridat()
+    {
+        return view('kategorie/pridat');
+
+    }
+
+    public function ulozit()
+    {
+        $typKomponent = new TypKomponent;
+        $data =[
+            'typKomponent' => $this->request->getPost('nazev'),
+            'url' => $this->request->getPost('URL')
+        ];
+        $typKomponent->save($data);
+
+        return redirect()->to('/');
+    }
 }
